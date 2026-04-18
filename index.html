@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>脱口秀主页 - Standup Comedy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <nav class="navbar">
+        <div class="logo">MIC DROP</div>
+        <ul class="nav-links">
+          <li><a href="#hero">主页</a></li>
+          <li><a href="#bits">段子</a></li>
+          <li><a href="#media">现场</a></li>
+          <li><a href="#contact">联系我</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <header id="hero" class="hero">
+        <div class="spotlight"></div>
+        <div class="hero-content">
+          <h1>聚光灯下的<br><span class="accent">脱口秀</span></h1>
+          <p>观察生活，解构荒诞。这里是我的段子库和演出现场。</p>
+          <a href="#bits" class="cta-btn">看我的段子</a>
+        </div>
+      </header>
+
+      <!-- Bits Section (Cards) -->
+      <section id="bits" class="bits-section">
+        <h2>我的段子夹</h2>
+        <div class="masonry-grid" id="jokes-container">
+          <!-- Jokes injected by JS -->
+        </div>
+      </section>
+
+      <!-- Media Section -->
+      <section id="media" class="media-section">
+        <h2>现场高光</h2>
+        <div class="video-grid" id="video-grid">
+          <!-- Images will be applied via CSS/JS -->
+          <div class="video-card placeholder" style="background-image: url('/video1.png')"></div>
+          <div class="video-card placeholder" style="background-image: url('/video2.png')"></div>
+          <div class="video-card placeholder" style="background-image: url('/video3.png')"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact-section">
+        <h2>预约商演</h2>
+        <p>需要一场爆笑的脱口秀表演？随时联系我！</p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="您的称呼" required>
+          <input type="email" name="email" placeholder="邮箱" required>
+          <textarea name="message" placeholder="演出详情与需求" rows="4" required></textarea>
+          <button type="submit" class="submit-btn">发送消息</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Standup Comedy Portfolio. All rights reserved.</p>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
